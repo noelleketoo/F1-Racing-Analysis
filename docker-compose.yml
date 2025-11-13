@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: f1-analysis-jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+      - jupyter-data:/root/.jupyter
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+
+volumes:
+  jupyter-data:
+
