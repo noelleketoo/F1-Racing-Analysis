@@ -8,7 +8,7 @@ ML project predicting F1 race outcomes by analyzing factors like qualifying posi
 - Anders Aistars
 - Xavier Agostino
 - Sonny Wang
-- Mert
+- Mert Iravul
 
 ## Project Goals
 
