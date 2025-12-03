@@ -1,22 +1,22 @@
-version: '3.8'
+# =============================================================================
+# F1 Racing Analysis - Docker Compose Configuration
+# =============================================================================
 
 services:
   jupyter:
+    container_name: f1-analysis-jupyter
     build:
       context: .
-      dockerfile: Dockerfile
-    container_name: f1-analysis-jupyter
+      dockerfile: docker/Dockerfile
     ports:
       - "8888:8888"
     volumes:
-      - .:/app
+      - .:/app:cached
       - jupyter-data:/root/.jupyter
     environment:
       - JUPYTER_ENABLE_LAB=yes
-    restart: unless-stopped
     stdin_open: true
     tty: true
 
 volumes:
   jupyter-data:
-
