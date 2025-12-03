@@ -5,6 +5,7 @@
 services:
   jupyter:
     container_name: f1-analysis-jupyter
+    image: f1-analysis-jupyter
     build:
       context: .
       dockerfile: docker/Dockerfile

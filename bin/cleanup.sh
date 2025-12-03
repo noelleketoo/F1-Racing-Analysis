@@ -30,7 +30,7 @@ success "Containers stopped"
 
 # Remove images
 print_header "Removing Images"
-docker rmi f1-racing-analysis-jupyter 2>/dev/null && success "Image removed" || info "No image to remove"
+docker rmi f1-analysis-jupyter 2>/dev/null && success "Image removed" || info "No image to remove"
 
 # Prune
 print_header "Cleaning Up"

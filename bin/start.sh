@@ -37,7 +37,7 @@ fi
 
 # Check if image exists
 cd "$ROOT_DIR"
-if ! docker images | grep -q "f1-racing-analysis"; then
+if ! docker images | grep -q "f1-analysis-jupyter"; then
     warn "Docker image not found. Running setup first..."
     "${SCRIPT_DIR}/setup.sh"
 fi
