@@ -36,6 +36,8 @@ make status
 
 ```
 F1-Racing-Analysis/
+├── analysis.ipynb         # Main Jupyter notebook
+├── datasets/              # CSV data files (14 files)
 ├── bin/                   # CLI scripts
 │   ├── setup.sh           # Build Docker image
 │   ├── start.sh           # Start Jupyter
@@ -48,10 +50,8 @@ F1-Racing-Analysis/
 ├── docker/                # Docker configuration
 │   ├── Dockerfile         # Container definition
 │   └── requirements.txt   # Python dependencies
-├── datasets/              # CSV data files (14 files)
-├── analysis.ipynb         # Main Jupyter notebook
-├── docker-compose.yml     # Service configuration
 ├── Makefile               # Command interface
+├── docker-compose.yml     # Service configuration
 └── README.md
 ```
 
